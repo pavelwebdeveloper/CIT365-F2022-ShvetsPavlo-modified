@@ -1,0 +1,31 @@
+﻿@page
+@model MegaDesk.Pages.SurfaceMaterials.DetailsModel
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>SurfaceMaterial</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SurfaceMaterial.SurfaceMaterialName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SurfaceMaterial.SurfaceMaterialName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.SurfaceMaterial.Price)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.SurfaceMaterial.Price)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-page="./Edit" asp-route-id="@Model.SurfaceMaterial?.ID">Edit</a> |
+    <a asp-page="./Index">Back to List</a>
+</div>

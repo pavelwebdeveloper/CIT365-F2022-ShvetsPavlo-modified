@@ -1,0 +1,34 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+#js-showSurfaceMaterial {
+    width: 10em;
+}
+
+.responsive-image {
+    margin-top: 3em;
+    height: 55%;
+}
+
+@media only screen and (min-width: 850px) {
+    .responsive-image {
+        margin: auto;
+        width: 55%;
+    }
+}
